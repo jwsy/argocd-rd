@@ -1,4 +1,8 @@
 # ArgoCD on Rancher Desktop
+Source for this article on Medium https://itnext.io/argo-cd-rancher-desktop-for-a-local-gitops-lab-8d044089f50a
+
+![argocd-sync-mov-0914 mov-hq](https://user-images.githubusercontent.com/446031/190608256-0c0c0904-0944-4d35-a88c-361aa960e825.gif )
+
 With help and inspiration from https://github.com/tarosaiba/argocd-on-rancher-desktop
 
 ## Usage
