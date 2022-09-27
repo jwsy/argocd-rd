@@ -47,6 +47,15 @@ With help and inspiration from https://github.com/tarosaiba/argocd-on-rancher-de
     ``` bash
     kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
     ```
+    
+    In Powershell, you'll need two commands, example commands & output below
+    ```powershell
+    PS C:\Users\jyee\code\argocd-rd> $argocdPasswd = kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"
+    PS C:\Users\jyee\code\argocd-rd> [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($argocdPasswd))
+    5zcZjHZdpfYCQz5u
+    ```
+    
+    Browse to http://argocd.rancher.localhost/ with a Chromium or Firefox-based browser to use the `.localhost` magic
 
 ## Additional steps to deploy the jade-shooter app
 
